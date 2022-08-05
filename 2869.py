@@ -8,7 +8,7 @@ import sys
 import math
 A, B, C = map(int, sys.stdin.readline().split())
 
-#(C-B) : 정상에 도달했을때 미끄러지지 않은것 을 가정한 거리
+#(C-B) : 정상에 도달할때에는 미끄러지지 않기 때문에 B만큼 길이를 줄인다.
 #(A-B) : 하루 갈 수 있는 거리
 day = (C-B)/(A-B)
 print (math.ceil(day))
