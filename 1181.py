@@ -10,8 +10,7 @@ for i in range(N):
     values.append(input())
 
 values = list(set(values))
-values.sort()
-values.sort(key=lambda x:len(x))
+values.sort(key=lambda x:(len(x), x))
 
 for word in values:
     print(word)
